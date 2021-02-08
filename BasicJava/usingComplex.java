@@ -1,3 +1,4 @@
+package BasicJava;
 /**
  * Using Complex type objects
  */
@@ -63,5 +64,6 @@ public class usingComplex {
         } while (flag);
 
         System.out.println("    ( ( Bye bye~! ) )");
+        keyboard.close();
     }
 }

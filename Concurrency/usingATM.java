@@ -1,6 +1,8 @@
+package Concurrency;
 /**
  * Example of concurrency problem. Various threads operating on a single shared resource without mutual exclusion management
  */
+
 import java.util.Scanner;
 
 public class usingATM {
@@ -34,5 +36,6 @@ public class usingATM {
             threads[i].join();
 
         System.out.println("Funds after " + size + " operations: " + atms[0].balance(23654));
+        keyboard.close();
     }
 }

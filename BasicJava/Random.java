@@ -1,3 +1,4 @@
+package BasicJava;
 /**
  * Prints n random numbers, depending on an argument passed via command line
  */

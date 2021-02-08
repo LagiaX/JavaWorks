@@ -1,10 +1,8 @@
+package BasicJava;
 /**
  * Codifies a string using the Cesar method
  */
-
 import java.util.Scanner;
-
-import javax.lang.model.util.ElementScanner14;
 
 public class Cesar {
 
@@ -30,5 +28,6 @@ public class Cesar {
             else                                   // Any other character
                 System.out.print(string.charAt(i));
         }
+        keyboard.close();
     }
 }

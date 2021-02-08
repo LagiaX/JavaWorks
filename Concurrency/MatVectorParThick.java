@@ -1,6 +1,8 @@
+package Concurrency;
 /**
  * Runnable object with a shared resource
  */
+
 public class MatVectorParThick implements Runnable {
    
     public double[][] matrix;

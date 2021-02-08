@@ -1,6 +1,8 @@
+package Concurrency;
 /**
  * Abstraction of a bank account
  */
+
 public class BankAccount {
     
     private int accNumber;

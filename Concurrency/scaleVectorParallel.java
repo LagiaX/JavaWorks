@@ -1,6 +1,8 @@
+package Concurrency;
 /**
  * Example of parallel threads working at the same time. There is no critical region.
  */
+
 public class scaleVectorParallel extends Thread {
 
     public static int[] sharedVector;

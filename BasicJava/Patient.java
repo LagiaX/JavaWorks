@@ -1,3 +1,4 @@
+package BasicJava;
 /**
  * Abstraction of a hospital patient
  */

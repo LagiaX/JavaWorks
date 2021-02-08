@@ -1,6 +1,8 @@
+package Concurrency;
 /**
  * Example of parallelism of thick grain. Task is divided in as many cores are available.
  */
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -61,6 +63,7 @@ public class usingMatVectorParThick {
          endStopwatch = System.currentTimeMillis(); // Stop!
          d.setTime(endStopwatch);
          System.out.println("Finished work at " + df.format(d) + "\nElapsed time of " + (endStopwatch-initStopwatch) + " milliseconds");
+         keyboard.close();
     }
     
 }

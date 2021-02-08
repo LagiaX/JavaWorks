@@ -1,3 +1,7 @@
+package BasicJava;
+/**
+ * Simulation of a database for a hospital
+ */
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Iterator;
@@ -11,7 +15,7 @@ public class usingPatient {
     }
 
     public static boolean remove(Patient p) {
-        Iterator it = patients.iterator();
+        Iterator<Patient> it = patients.iterator();
         while (it.hasNext()) {
             Patient q = (Patient)it.next();
             if (p.getID() == q.getID() && p.getName() == q.getName()) {
@@ -22,7 +26,7 @@ public class usingPatient {
     }
 
     public static Patient find(String id) {
-        Iterator it = patients.iterator();
+        Iterator<Patient> it = patients.iterator();
         while (it.hasNext()) {
             Patient q = (Patient)it.next();
             if (id.equals(q.getID())) {
@@ -93,5 +97,6 @@ public class usingPatient {
         } while (flag);
 
         System.out.println("    ( ( Bye bye~! ) )");
+        keyboard.close();
     }
 }

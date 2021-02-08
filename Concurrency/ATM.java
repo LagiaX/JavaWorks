@@ -1,6 +1,8 @@
+package Concurrency;
 /**
  * Runnable object with a shared resource
  */
+
 public class ATM implements Runnable {
 
     public static BankAccount account = new BankAccount(23654, "John Doe", "9785412J", 0);
