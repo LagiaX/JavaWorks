@@ -30,12 +30,12 @@ public class usingMatVectorParThick {
         // Divide the work
         int nCores = Runtime.getRuntime().availableProcessors();
         double Cb = 0;
-        int nThreads = (int)(nCores/(1-Cb));
+        int nThreads = (int)(nCores / (1 - Cb));
 
         ThreadPoolExecutor pool = new ThreadPoolExecutor(nThreads, nThreads, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>());
 
         int start = 0;
-        int part = size/nThreads;
+        int part = size / nThreads;
         int end = part;
 
         for (int i = 0; i < size; i++) {
